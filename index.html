@@ -32,6 +32,7 @@
 			<div class="header">
 				<div class="container">
 					<nav class="navbar navbar-default">
+
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -41,6 +42,8 @@
 							<span class="icon-bar"></span>
 						  </button>
 							<div class="w3layouts-logo">
+								
+
 								<h1><a href="index.html">Hack<span>NITJ</span></a></h1>
 							</div>
 						</div>
@@ -49,12 +52,12 @@
 						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1" style="margin-top:15px">
 							<nav>
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html">Home</a></li>
-									<li><a href="about.html">About</a></li>
-									<li><a href="#">Team</a></li>
-                                    <li><a href="#">FAQ's</a></li>
-                                    <li><a href="#">Sponsors</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									
+									<li><a href="#welcome">About</a></li>
+									<li><a href="#team">Team</a></li>
+                                    <li><a href="#faq">FAQ's</a></li>
+                                    <li><a href="#sponsors">Sponsors</a></li>
+									<li><a href="#contact">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -116,6 +119,94 @@
 										<div class="more-button text-center" style="padding-top:1cm">
 											<a href="https://edas.info/24557" class="hvr-bounce-to-bottom " style="font-size:150%">Idea Submission</a>
 										</div>
+										<br><br><br><br><br>
+ <style> 
+ 	bod{ 
+	text-align: center; 
+	background: #00ECB9; 
+font-family: sans-serif; 
+font-weight: 100; 
+} 
+h1{ 
+color: #cbe2ed; 
+font-weight: 100; 
+font-size: 40px; 
+margin: 40px 0px 20px; 
+} 
+#clockdiv{ 
+	font-family: sans-serif; 
+	color: #fff; 
+	display: inline-block; 
+	font-weight: 100; 
+	text-align: center; 
+	font-size: 30px; 
+} 
+#clockdiv > div{ 
+	padding: 10px; 
+	border-radius: 3px; 
+	background: #0f506d; 
+	display: inline-block; 
+} 
+#clockdiv div > span{ 
+	padding: 15px; 
+	border-radius: 3px; 
+	background: #317a9b; 
+	display: inline-block; 
+} 
+.smalltext{ 
+	padding-top: 5px; 
+	font-size: 12px; 
+} 
+</style> 
+<bod> 
+<h1>The Battle Begins In</h1> 
+<div id="clockdiv"> 
+<div> 
+	<span class="days" id="day"></span> 
+	<div class="smalltext">Days</div> 
+</div> 
+<div> 
+	<span class="hours" id="hour"></span> 
+	<div class="smalltext">Hours</div> 
+</div> 
+<div> 
+	<span class="minutes" id="minute"></span> 
+	<div class="smalltext">Minutes</div> 
+</div> 
+<div> 
+	<span class="seconds" id="second"></span> 
+	<div class="smalltext">Seconds</div> 
+</div> 
+</div> 
+
+<p id="demo"></p> 
+
+<script> 
+
+var deadline = new Date("july 31, 2019 15:37:25").getTime(); 
+
+var x = setInterval(function() { 
+
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+document.getElementById("day").innerHTML =days ; 
+document.getElementById("hour").innerHTML =hours; 
+document.getElementById("minute").innerHTML = minutes; 
+document.getElementById("second").innerHTML =seconds; 
+if (t < 0) { 
+		clearInterval(x); 
+		document.getElementById("demo").innerHTML = "TIME UP"; 
+		document.getElementById("day").innerHTML ='0'; 
+		document.getElementById("hour").innerHTML ='0'; 
+		document.getElementById("minute").innerHTML ='0' ; 
+		document.getElementById("second").innerHTML = '0'; } 
+}, 1000); 
+</script> 
+ </bod>
 
 
 										<!--<div class="row">
@@ -128,8 +219,10 @@
 													<font style="color:white; font-size:100%; font-family:verdana; letter-spacing:1px;">Accepted and presented papers will be published in the conference proceedings and shall be submitted for consideration in IEEE Xplore Digital library for publication.</font>
 												</div>-->
 <br><br><br><br><br><br><br><br><br><br>
+<img src="images/My Post.png" alt="p" style="float: right; width:200px;height:250px;margin-left:15px;">
 												<div class="col-md-7"  style="text-align:center">
 												<div style="float:right; text-align:center; font-size:110%; font-family:verdana; letter-spacing:1px; color:white; line-height:30px; margin-top:20px;">
+
 													<h6 style="font-size:20px; color:#31AE4D;  padding-bottom:15px"><b><u>Important Dates</u></b></h6>
 													<font style="color:#990000; font-size:20px; font-weight:bold">Timeline</font><br />
 													Registration Begins and Problem Statements Live: 1st July,2019<br>
@@ -140,7 +233,9 @@
 
          
 													
-												</div>
+											
+													
+												
 											</div>
 										</div>
 										<br /><br />
@@ -196,7 +291,7 @@
 		<div class="container">
 
 			<div class="w3layouts-logo">
-								<h2 style="font-family:verdana;  color:#FFD700; text-align: center;"><a href="index.html">TRACKS THIS HACKATHON</a></h2>
+								<h2 style="font-family:verdana;color: #ffd700; text-align: center;"><strong>TRACKS THIS HACKATHON</strong></a></h2>
 							</div>
 
 
@@ -206,7 +301,7 @@
 							<i class="fa fa-server" aria-hidden="true"></i>
 						</div>
 						<div class="wthree-services-info">
-							<h5 style=" color:#00ad45">Artificial Intelligence</h5>
+							<h5 style=" color:#ffd700">Artificial Intelligence</h5>
 							<span></span>
 							<p style="background-image: url(images/bg_p.png); text-align:justify; color:#ABB2BF; font-size:14px; font-family:verdana; text-transform:none">From bots, to personal assistants, and shopping automation, what the future holds for artificial intelligence can be described for sure with at least one word; Exciting. Our machines and devices are getting faster, more efficient and slowly learning to do things on their own.
                            </p>
@@ -224,7 +319,7 @@
 						<i class="fa fa-desktop" aria-hidden="true"></i>
 					</div>
 					<div class="wthree-services-info">
-						<h5 style=" color:#00ad45">Blockchain</h5>
+						<h5 style=" color:#ffd700">Blockchain</h5>
 						<span></span>
 						<p style="text-align:justify; background-image: url(images/bg_p.png); color:#ABB2BF; font-size:14px; font-family:verdana; text-transform:none">Today's most exciting use cases for blockchain technology extend far beyond payments and digital currency. With the advent of "smart contracts" and turing-complete frameworks, blockchain technology has evolved far beyond just bitcoins. It is time to join the Web 3.0 revolution!
  </p>
@@ -237,7 +332,7 @@
 						<i class="fa fa-desktop" aria-hidden="true"></i>
 					</div>
 					<div class="wthree-services-info">
-						<h5 style=" color:#00ad45; font-size: bold;" >Internet of Things</h5>
+						<h5 style=" color:#ffd700; font-size: bold;" >Internet of Things</h5>
 						<span></span>
 						<p style="text-align:justify; background-image: url(images/bg_p.png); color:#ABB2BF; font-size:14px; font-family:verdana; text-transform:none">A world of devices connected by internet opens up opportunities for us that were previously unthinkable. Innovative apps can be built that can allow devices to share data and take intelligent decisions.
  </p>
@@ -250,7 +345,7 @@
 						<i class="fa fa-navicon" aria-hidden="true"></i>
 					</div>
 					<div class="wthree-services-info">
-						<h5 style=" color:#00ad45">Algorithms</h5>
+						<h5 style=" color:#ffd700">Algorithms</h5>
 						<span></span>
 						<p style="text-align:justify; background-image: url(images/bg_p.png); padding:5px; color:#ABB2BF; font-size:14px; font-family:verdana; text-transform:none">Ever wondered why is there a price hike while we hunt for the same flight over and over? Algorithms do it for the Airlines. This concept of Algorithms has existed for centuries; from increasing your flight fares to making your work easier online, algorithms are an integral part of how computers process data. With this track, you challenge world's best programmers and put your coding skills at their best!
  </p>
@@ -261,7 +356,7 @@
 						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 					</div>
 					<div class="wthree-services-info">
-						<h5 style=" color:#00ad45">Machine Learning</h5>
+						<h5 style=" color:#ffd700">Machine Learning</h5>
 						<span></span>
 						<p style="text-align:justify; background-image: url(images/bg_p.png); padding:5px; color:#ABB2BF; font-size:14px; font-family:verdana; text-transform:none">Are you fascinated by how Netflix recommends the movies you’ll like? Have you wondered what is the Google algorithm that shows you such accurate search results? Machine Learning is behind these innovations. It represents a key evolution in the fields of computer science, data analysis, software engineering, and artificial intelligence.
  </p>
@@ -386,6 +481,66 @@
 </section>
 
 -->
+<section id="prizes" class="loading-hide" style="background-color:  #00001a; display: block;">
+	<br><br>
+        <h2 class="text-center heading" style="color: #FFD700;">Prizes and Goodies</h2>
+        <div class="container-fluid">
+            <div class="row" style="justify-content: center; padding: 1vh 10%;">
+                <div class="col-md-4">
+                    <center>
+                        <div class="card" style="width: 18rem; box-shadow: 5px 5px 4px #000000; background-color: rgb(245, 245, 245); margin-top: 10%;">
+                            <div class="card-body">
+                                <p class="card-text" style="padding-top: 10%;">
+                                    </p><center style="padding-top: 10%; padding-bottom: 30%;">
+                                        <img src="images/1st.png" class="img-fluid img" style="width: 50%"><br><br>
+                                        <p>₹ 25,000 Cash<br>+<br>Goodies.<br></p>
+                                    </center>
+                                <p></p>
+                                <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
+                                    <center>1<sup>st</sup> Prize</center>
+                                </h5>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <div class="card" style="width: 18rem; box-shadow: 5px 5px 4px #000000; background-color: rgb(245, 245, 245); margin-top: 10%;">
+                            <div class="card-body">
+                                <p class="card-text" style="padding-top: 10%;">
+                                    </p><center style="padding-top: 10%; padding-bottom: 30%;">
+                                        <img src="images/2nd.png" class="img-fluid img" style="width: 50%"><br><br>
+                                        <p>₹ 15,000 Cash<br>+<br>Goodies.<br></p>
+                                    </center>
+                                <p></p>
+                                <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
+                                    <center>2<sup>nd</sup> Prize</center>
+                                </h5>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <center>
+                        <div class="card" style="width: 18rem; box-shadow: 5px 5px 4px #000000; background-color: rgb(245, 245, 245); margin-top: 10%;">
+                            <div class="card-body">
+                                <p class="card-text" style="padding-top: 10%;">
+                                    </p><center style="padding-top: 10%; padding-bottom: 30%;">
+                                        <img src="images/3rd.png" class="img-fluid img" style="width: 50%"><br><br>
+                                        <p>₹ 10,000 Cash<br>+<br>Goodies.<br></p>
+                                    </center>
+                                <p></p>
+                                <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
+                                    <center>3<sup>rd</sup> Prize</center>
+                                </h5>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section id="faq" class="loading-hide" style=" background-image: url(images/faq.jpg); display: block;">
 	<br><br>
         <h2 class="text-center heading" style="color:#FFD700; font-family:verdana;">FAQ's</h2>
@@ -395,7 +550,7 @@
                 <ul>
                     <div class="panel-group" id="accordion">
                         <div class="col-md-6">
-                            <div class="panel panel-default" style="background: transparent;">
+                            <div class="panel panel-default" style="background:transparent;">
                                 <div class="panel-heading panel-heading-modified" style="background: transparent;">
                                     <h4 class="panel-title panel-title-modified">
                                         <a data-toggle="collapse" data-parent="#accordion" href="" style="color: #fffad8;">1.
@@ -681,7 +836,185 @@ th, td {
 
          </div> <!-- end services-content -->
 
+ <section id="sponsors" class="loading-hide" style="background-color:  ; padding-top: 50px; display: block;">
+            <div class="">
+                <h2 class="text-center heading" style="padding-top: 2vh; font-family: verdana;color: #FFD700 ;">Our Sponsors</h2>
+                <div class="text-center">
+                    <a href="http://infotechhub.in/" target="_blank"><img class="img img-fluid" src="images/Github_logo.png" style="margin-top: 50px; width: 70%; max-width: 600px;" height="auto"></a> <br><br>
+                    <a href="https://www.techgig.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/techgig.png" style="margin-top: 50px; width: 55%; max-width: 400px;" height="auto"></a>
+                </div><br>
 
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center; padding: 50px;">
+                        <h3 style="color: #444; font-size: 170%; padding-bottom: 20px">Mentored By</h3>
+                    </div>
+                    <div class="col-md-6" style="text-align: center; padding-bottom: 40px">
+                        <a href="http://www.itversity.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/itversity.png" style="margin-top: 50px; width: 90%; max-width: 600px;" height="auto"></a>
+                    </div>
+                    <div class="col-md-6" style="text-align: center; padding-bottom: 40px">
+                        <a href="http://www.codeasylums.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/codeasylums.png" style="width: 40%; max-width: 600px;" height="auto"></a>
+                    </div>
+
+                </div>
+                <div class="row" style="justify-content: center; padding-top: 0vh; padding-left: 10%; padding-right: 10%; vertical-align: middle;">
+                    <div class="col-md-12" style="text-align: center; padding: 50px;">
+                        <h3 style="color: #444; font-size: 170%; padding-bottom: 20px">Megabyte Sponsors</h3>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                        <a href="http://www.digitalocean.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/do.png" width="40%" height="auto"></a>
+                        <h5 style="padding: 20px">Cloud Partner</h5>
+                    </div>
+
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                        <a href="http://www.balsamiq.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/balsamiq.png" width="75%" height="auto"></a>
+                        <h5 style="padding: 20px"></h5>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                        <a href="http://www.jetbrains.com/" target="_blank"><img class="img img-fluid jetbrains" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/jetbrains.png" width="40%" height="auto"></a>
+                    </div>
+                    <div class="col-md-12" style="text-align: center; padding-bottom: 40px">
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                        <a href="https://get.tech/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/radix.png" width="40%" height="auto"></a>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                        <a href="https://skillenza.com/" target="_blank"><img class="img img-fluid skillenza" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/skillenza.png" width="75%" height="auto"></a>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center">
+                        <a href="https://zebronics.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/zebronics.jpg" width="75%" height="auto"></a>
+                        <h5 style="padding: 20px">Technology Partner</h5>
+                    </div>
+                    <div class="col-md-12" style="text-align: center; padding-bottom: 40px">
+                    </div>
+
+                </div>
+                <div class="row" style="justify-content: center; padding-bottom: 0vh; padding-left: 10%; padding-right   : 10%; vertical-align: middle;">
+
+                </div>
+                <div class="row" style="justify-content: center; padding-bottom: 0vh; padding-left: 10%; padding-right   : 10%; vertical-align: middle;">
+                    <div class="col-md-12 megabyte-sponsor" style="text-align: center; padding-bottom: 40px">
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center">
+                        <a href="https://www.wecreateproblems.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/wecp.jpg" width="53%" height="auto"></a>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center">
+                        <a href="https://zulipchat.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/zulip.svg" width="33%" height="auto"></a>
+                        <h5 style="padding: 20px">Chat Partner</h5>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                        <a href="https://www.hoolah.co/" target="_blank"><img class="img img-fluid" style="margin-top: 50px;" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/hoolah.png" width="53%" height="auto"></a>
+                    </div>
+                </div>
+                <div class="row" style="justify-content: center; padding-bottom: 0vh; padding-left: 10%; padding-right   : 10%; vertical-align: middle;">
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 5vh;">
+                        <a href="http://winkies.co.in/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/winkies.png" width="53%" height="auto"></a>
+                        <h5 style="padding: 20px">Specialist Partner</h5>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                        <a href="https://cavinkare.com/brand/dairy/cavins/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/cv.png" width="53%" height="auto" style="margin-top: 40px;"></a>
+                        <h5 style="padding: 50px">Geek Fuel Partner</h5>
+                    </div>
+                    <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                        <img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/ninjas.png" width="53%" height="auto" style="margin-top: 50px;">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center; padding: 50px;">
+                            <h3 style="color: #444; font-size: 170%;">Kilobyte Sponsors</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 5vh;">
+                            <a href="https://www.topcoder.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/tc.png" width="45%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 0vh;">
+                            <a target="_blank" href="https://www.ubisoft.com/en-us/"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/ubisoft.png" width="30%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                            <a target="_blank" href="https://www.codechef.com/"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/codechef.png" width="60%" height="auto"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 megabyte-sponsor" style="text-align: center;">
+                        <br><br>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 5vh;">
+                            <a target="_blank" href="https://www.hackerrank.com/interview/interview-preparation-kit?utm_source=Saveetha+College+of+Engg+&amp;utm_medium=email&amp;utm_campaign=interviewprep_college_mail"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/hackerrankng.png" width="50%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 5vh;">
+                            <a href="https://hasura.io/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/hasura.png" width="45%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                            <a href="https://www.bugsee.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/bugsee.png" width="45%" height="auto"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 megabyte-sponsor" style="text-align: center;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                            <a target="_blank" href="https://www.grabon.in/"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/grabon.png" width="50%" height="auto"></a>
+                            <h5 style="padding: 20px; padding-top: -300px; ">Official Savings Partner</h5>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 10vh;">
+                            <a target="_blank" href="https://temboo.com/"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/temboo.png" width="50%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 10vh;">
+                            <a href="https://www.invisionapp.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/invision-logo-pink1.png" width="40%" height="auto"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 megabyte-sponsor" style="text-align: center;">
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center; padding-top: 5vh;">
+                            <a target="_blank" href="https://challengerocket.com/?utm_source=partners&amp;utm_medium=link&amp;utm_campaign=Partners_Ref_Logo&amp;utm_term=IWO&amp;utm_content=Hackabit"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/cr.png" width="45%" height="auto"></a>
+                        </div>
+                        <div class="col-md-4 megabyte-sponsor" style="text-align: center;">
+                            <a target="_blank" href="https://www.eckovation.com/courses.html?utm_campaign=1346784859&amp;adgroupid=53644435403&amp;utm_content=262923685137&amp;utm_term=eckovation&amp;gclid=Cj0KCQjwgOzdBRDlARIsAJ6_HNkxzqtubG_PNbdwehz1q1DYSLIQdbZ6nxLWKqpEQc0sufCXr07TXIUaAm9IEALw_wcB"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/eckovation.png" width="40%" height="auto"></a>
+                            <h5 style="padding: 20px">Online Education Partner</h5>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center; padding: 50px;">
+                        <h3 style="color: #444; font-size: 170%;">Media Partners</h3>
+                    </div>
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="https://www.wittyfeed.com/" target="_blank"><img class="img img-fluid" style="background-color: #3498db" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/wittyfeed.png" width="60%" height="auto"></a>
+                        <h5 style="padding: 20px;">Outreach Partner</h5>
+                    </div>
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="https://www.geeksmate.io/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/geeksmate.png" width="60%" height="auto"></a>
+                        <h5 style="padding: 20px; padding-top: 25px">Community Partner</h5>
+                    </div>
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="https://www.dailypioneer.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/pioneer.jpg" width="60%" height="auto"></a>
+                        <h5 style="padding: 20px; padding-top: 25px;">English Media Partner</h5>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="https://www.eatmy.news/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/eatmynews.png" width="40%" height="auto" style="margin-top: -8%;"></a>
+                        <h5 style="padding: 20px; padding-top: 0px;">Social Media Partner</h5>
+                    </div>
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="http://dubeat.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/du_beat.png" width="40%" height="auto" style="margin-top: -8%;"></a>
+                        <h5 style="padding: 20px; padding-top: 10px">Social Media Partner</h5>
+                    </div>
+                    <div class="col-md-4" style="text-align: center; display: inline-block; vertical-align: middle;">
+                        <a href="https://www.prabhatkhabar.com/" target="_blank"><img class="img img-fluid" src="./Hack-A-BIT _ Birla Institute of Technology, Mesra_files/pk.jpg" width="50%" height="auto" style="margin-top: -8%;"></a>
+                        <h5 style="padding: 20px; padding-top: 10px">Hindi Media Partner</h5>
+                    </div>
+                </div>
+            </div>
+    </section></div><!-- End off container -->
 
          </section>
 
@@ -694,7 +1027,7 @@ th, td {
 
 				 		<div class="col-md-3 team-grids">
 				 				<div class="team-img">
-				 					   <img class="img-responsive" style="height:70%; width:63%;   margin-left: auto;		margin-right: auto;" src="images/director.jpg" alt="">
+				 					   <img class="img-responsive" style="height:70%; width:63%; border-radius: 50%;  margin-left: auto;		margin-right: auto;" src="images/director.jpg" alt="">
 				 				</div>
 								<div class="team-agile">
 										<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126); font-size:115%">Prof. Lalit Kumar Awasthi</h4>
@@ -707,7 +1040,7 @@ th, td {
 
 				 	 <div class="col-md-3 team-grids">
 				 			<div class="team-img">
-				 				   <img class="img-responsive" style="height:65%; width:65%;   margin-left: auto;				   margin-right: auto;" src="images/dr_geeta_sikka_.jpg" alt="" >
+				 				   <img class="img-responsive" style="height:70%; width:63%; border-radius: 50%;   margin-left: auto;				   margin-right: auto;" src="images/dr_geeta_sikka_.jpg" alt="" >
 				 			</div>
 							<div class="team-agile">
 									<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);font-size:115%">Dr. Geeta Sikka</h4>
@@ -720,7 +1053,7 @@ th, td {
 
 						<div class="col-md-3 team-grids">
 								<div class="team-img">
-										 <img class="img-responsive" style="height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/sangal.jpg" alt="">
+										 <img class="img-responsive" style="height:90%; width:70%;  border-radius: 50%; margin-left: auto;					   margin-right: auto;" src="images/sangal.jpg" alt="">
 								</div>
 								<div class="team-agile">
 										<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);font-size:115%">Prof. A. L. Sangal</h4>
@@ -733,7 +1066,7 @@ th, td {
 
 				 		<div class="col-md-3 team-grids">
 				 				<div class="team-img">
-				 					   <img class="img-responsive" style="height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/harsh.jpg" alt="">
+				 					   <img class="img-responsive" style="height:90%; width:70%; border-radius: 50%;   margin-left: auto;					   margin-right: auto;" src="images/harsh.jpg" alt="">
 				 				</div>
 								<div class="team-agile">
 										<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);font-size:115%">Dr. Harsh Verma</h4>
@@ -753,16 +1086,16 @@ th, td {
 				 </div>
 				 </div>
 				 <!-- team -->
-<div class="team-section">
+<div class="team-section" id="team">
 		<div class="container">
  <div class="w3l-heading">
-	 <h3 style="color:#000000e8; text-shadow: 1px 1px 1px rgb(118,121,126);">Team Members</h3>
+	 <h3 style="color:#000000e8; text-shadow: 1px 1px 1px rgb(118,121,126);">Core Team</h3>
  </div>
    <div class="team-row">
 
 		<div class="col-md-3 team-grids">
 				<div class="team-img">
-					   <img class="img-responsive" style="border-radius: 50%; height:100%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/alok.jpeg" alt="">
+					   <img class="img-responsive" style=" height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/alok.jpeg" alt="">
 				</div>
 				<div class="team-agile">
 					<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);">Alok Verma</h4>
@@ -776,7 +1109,7 @@ th, td {
 
 	 <div class="col-md-3 team-grids">
 			<div class="team-img">
-				   <img class="img-responsive" style="border-radius: 50%; height:70%; width:70%;   margin-left: auto;				   margin-right: auto;" src="images/arvind.jpeg" alt="">
+				   <img class="img-responsive" style=" height:100%; width:65%;   margin-left: auto;	 margin-right: auto;" src="images/arvind.jpeg" alt="">
 			</div>
 			<div class="team-agile">
 				<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);">Arvind Jain</h4>
@@ -790,7 +1123,7 @@ th, td {
 
 		<div class="col-md-3 team-grids">
 				<div class="team-img">
-					   <img class="img-responsive" style="border-radius: 50%; height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/anurag.jpg" alt="">
+					   <img class="img-responsive" style=" height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/anurag.jpg" alt="">
 				</div>
 				<div class="team-agile">
 					<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);">Anurag Verma</h4>
@@ -803,7 +1136,7 @@ th, td {
 			</div>
 			<div class="col-md-3 team-grids">
 				<div class="team-img">
-					   <img class="img-responsive" style="border-radius: 50%; height:70%; width:70%;   margin-left: auto;					   margin-right: auto;" src="images/arpit.jpg" alt="">
+					   <img class="img-responsive" style=" height:80%; width:65%;   margin-left: auto;					   margin-right: auto;" src="images/arpit.jpg" alt="">
 				</div>
 				<div class="team-agile">
 					<h4 style="color:green ;  text-shadow: 1px 1px 1px rgb(118,121,126);">Arpit Gupta</h4>
@@ -822,9 +1155,12 @@ th, td {
 </div>
 </div>
 
-				 <div class="footer">
+
+
+				 
+				<div class="footer" id="contact">
 				 	<div class="container" style="font-family:verdana;">
-				 		<div class="col-md-6 footerleft">
+				 		<div class="col-md-3 footerleft">
 				 			<h3>Address</h3>
 				 			<p style="text-transform:none">Dr. B.R. Ambedkar National Institute of Technology Jalandhar</p>
 				 			<p>N.I.T. Post Office</p>
@@ -832,10 +1168,10 @@ th, td {
 				 		</div>
 				 		<div class="col-md-3 footermiddle">
 				 			<h3>Email us at</h3>
-				 		<p class="email">@nitj.ac.in</p>
-				 			<p class="email">.ac.in</p>
-				 			<p class="email">@nitj.ac.in</p>
-				 			<p class="email">@nitj.ac.in</p>
+				 		<p class="email">ocs@nitj.ac.in</p>
+				 			<p class="email">sikkag@nitj.ac.in</p>
+				 			<p class="email">hcs@nitj.ac.in</p>
+				 			<p class="email">vermah@nitj.ac.in</p>
 				 		</div>
 				 			<div class="col-md-3 footermiddle">
 				 			<h3>Call us at</h3>
@@ -844,20 +1180,39 @@ th, td {
 				 			<p class="phone">Mobile: (+91) 98885-82299</p>
 				 			<p class="phone">Fax: (+91) 181-2690320</p>
 				 		</div>
+				 		<div class="col-md-3 footermiddle">
+				 			<h3>Social Links</h3>
+    <div >
+      <div class="col-sm-3 col-12 ">   
+        <a href="https://www.facebook.com/techniti/" target="_blank"><span><img src="images/Facebook.png" class="track-image">Facebook</span>  </a>
+      </div>
+      <br><br>
+
+      <div class="col-sm-3 col-12">
+        
+        <a href="https://twitter.com/techniti/" target="_blank"><span><img src="images/Twitter.png" class="track-image">Twitter</span> </a>
+      </div>
+<br>
+      <div class="col-sm-3 col-12">
+        <a href="https://www.instagram.com/techniti/" target="_blank"><span><img src="images/insta.png" class="track-image">Instagram</span></a>
+      </div>
+      <br>
+    </div>
+				 		</div>
 				 		<div class="clearfix"> </div>
 				 	</div>
 				 </div>
+				 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="304" id="gmap_canvas" src="https://maps.google.com/maps?q=DR%20BR%20AMBEDKAR%20NATIONAL%20INSTITUTE%20OF%20TECHNOLOGY%2C%20GT%20BYPASS%2C%20JALNDHAR&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:304px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:304px;width:100%;}</style></div>
 				 
 
 
-<!--<div class="wthree_copy_right">
+<div class="wthree_copy_right">
 	<div class="container">
-		<p>© 2018 ICSCCC . All rights reserved | Design by <a href="https://www.linkedin.com/in/sargunjot-singh-694671130/">Sargunjot Singh</a> </p>
+		<p>© 2019 HackNITJ . All rights reserved </a> </p>
 
 	</div>
 </div>
-div class="container-fluid footer" id="contact" style="background-color: #FBFBFB;">
--->
+
 
 <!-- //copyright -->
 
@@ -941,20 +1296,9 @@ div class="container-fluid footer" id="contact" style="background-color: #FBFBFB
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-				};
-			*/
+	<script>
 
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-			});
+		
 	</script>
 <!-- //here ends scrolling icon -->
 
